@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #2D2D2D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+.logo{
+    font-weight: 600;
+    font-size: 20px;
+}
+.icon_menu{
+    display: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    gap: 50px;
+}
+header{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+.content-header{
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-header{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.content-header h1{
+    font-size: 80px;
+    margin: 20px 0;
+}
+.content-02{
+    display: none;
+}
+.skills_section{
+    display: flex;
+    padding: 100px;
+    gap: 125px;
+}
+.skills_section .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 33.33%;
+}
+.skills_section .content h3{
+    font-size: 27px;
+}
+.skills_section .content p{
+    text-align: center;
+}
+.work-section{
+    padding: 100px 100px 0 100px;
+}
+.work-section h3{
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+}
+.work-section .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 60px 0;
+}
+.work-section .container .content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 33.33%;
+}
+.work-section .container .content img{
+    width: 315px;
+}
+.work-section .container .content h4{
+    margin: 15px 0;
+}
+footer{
+    padding: 0 100px;
+}
+footer .container{
+    border-top: 1px solid gray;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.container .content-footer{
+    width: 50%;
+}
+.container .box-input{
+    width: 50%;
+}
+.box-input form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .container .content-footer h3{
+    font-size: 32px;
+}
+footer .container .content-footer p{
+    width: 400px;
+    margin: 30px 0;
+}
+#name{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #F3F3F3;
+}
+#email{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #F3F3F3;
+}
+#message{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #F3F3F3;
+}
+footer .container .box-icon{
+    display: flex;
+    gap: 20px;
+}
+.icon{
+    font-size: 32px;
+}
+#btn-submit{
+    width: 235px;
+    height: 60px;
+    border: none;
+    background-color: #2D2D2D;
+    color: #F3F3F3;
+}
+
+/* fix-padding */
+@media screen and (max-width: 1200px){
+    header{
+        padding: 100px 20px;
+    }
+    .skills_section{
+        padding: 150px 20px;
+    }
+    .work-section{
+        padding: 100px 20px 20px;
+    }
+    .container{
+        gap: 10px;
+    }
+    footer{
+        padding: 20px;
+    }
+}
+
+/* tablet */
+
+@media screen and (max-width: 1024px){
+    .menu{
+        display: none;
+    }
+    .icon_menu{
+        display: block;
+    }
+    header{
+        text-align: center;
+        padding: 100px 0;
+        flex-wrap: wrap;
+    }
+    .content-02{
+        display: block;
+    }
+    .content-01{
+        display: none;
+    }
+    .content-header h1{
+        font-size: 48px;
+    }
+    .content-header{
+        width: 100%;
+    }
+    .img-header{
+        width: 100%;
+    }
+    .skills_section{
+        flex-wrap: wrap;
+    }
+    .skills_section .content{
+        width: 100%;
+    }
+    .work-section .container{
+        flex-wrap: wrap;
+    }
+    .work-section .container .content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .work-section .container .content .box{
+        display: inline;
+        margin: auto;
+    }
+    footer .container{
+        flex-wrap: wrap;
+    }
+    footer .container .content-footer p{
+        width: auto;
+    }
+    footer .container .content-footer{
+        width: 100%;
+    }
+    footer .container .box-input{
+        width: 100%;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width: 680px){
+
+    .img-header img{
+        width: 270px;
+    }
+
+}
